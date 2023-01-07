@@ -4,12 +4,38 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://www.pexels.com/assets/static/images/meta/favicon.ico" rel="shortcut icon" type="image/x-icon">
     <title>New Year New Me</title>
     <!-- link css file  -->
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!--===================== -->
+    <!--Start Header Section  -->
+    <!--===================== -->
+    <header class="bg-dark">
+      <div class="container">
+        <div class="flex justify-between items-center py-10">
+          <h1 class="logo title"><span>Shah</span>jalal</h1>
+          <ul class="flex items-center gap-5">
+            <li><a href="#success-section">Success</a></li>
+            <li><a href="#failure-section ">Failure</a></li>
+
+            <li><a href="#plan-section">My Plan</a></li>
+            <li><a href="#footer">About Me</a></li>
+            <li class="">
+              <a href="https://www.facebook.com/shahjalal.bu">Contact Me</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <!--=================== -->
+    <!--End Header Section  -->
+    <!--=================== -->
+    <!--====================== -->
     <!-- Start Branner Section -->
+    <!--===================== -->
     <section id="branner-section" class="branner">
       <dev class="branner-right-section">
         <h1 class="branner-title">
@@ -17,7 +43,7 @@
           Possible If You <br />
           believe
         </h1>
-        <p class="branner-text">
+        <p class="branner-text lead">
           There are many variations of passages of Lorem Ipsum available, but
           the majority have suffered alteration in some form, by injected
           humour, or randomised words
@@ -25,18 +51,196 @@
         <button class="btn btn-secondary">Contact Us</button>
       </dev>
     </section>
-
+    <!--==================== -->
     <!-- End Branner Section -->
-    <!-- Start failure Section --> 
-    <div class="failure-section">
-        <div class="failure-image">
-            
+    <!--==================== -->
+    <!--====================== -->
+    <!-- Start Success Section -->
+    <!--====================== -->
+    <section id="success-section" class="container pt-100">
+      <h2 class="title text-dark text-center my-100">Success In Last Year</h2>
+      <div class="flex flex-row-reverse">
+        <div class="image-section">
+          <img
+            src="https://images.pexels.com/photos/3779409/pexels-photo-3779409.jpeg?auto=compress&cs=tinysrgb&w=500&h=500&dpr=1"
+            alt="success"
+            class="rounded"
+          />
         </div>
-        <div class="failure-text"></div>
-    </div>
-    <!-- End failure Section --> 
- 
-
-    <section id="banner"></section>
+        <div class="flex items-center justify-center w-50">
+          <div>
+            <div class="lead">
+              Contrary to popular belief, Lorem Ipsum is not simply random text.
+              It has roots in a piece of classical Latin literature from 45 BC,
+              making it over 2000 years old. Richard McClintock.
+            </div>
+            <ul>
+              <li class="lead">
+                <span class="select-icon">&#10004;</span> Contrary to popular
+                belief, is not simply.
+              </li>
+              <li class="lead">
+                <span class="select-icon">&#10004;</span> Contrary to popular
+                belief
+              </li>
+              <li class="lead">
+                <span class="select-icon">&#10004;</span> Contrary to popular
+                belief, is not simply.
+              </li>
+              <li class="lead">
+                <span class="select-icon">&#10004;</span> Contrary to popular
+                belief
+              </li>
+              <li class="lead">
+                <span class="select-icon">&#10004;</span> Contrary to popular
+                belief, is not simply.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--=====================-->
+    <!-- End failure Section -->
+    <!--=====================-->
+    <!--=======================-->
+    <!-- Start failure Section -->
+    <!--====================== -->
+    <section id="failure-section" class="failure container flex pt-100">
+      <div class="image-section">
+        <img src="./images/person-no-bg.png" alt="" />
+        <div class="circle"></div>
+      </div>
+      <div class="flex items-center justify-center">
+        <div>
+          <h2 class="title text-dark">
+            My failures of <br />
+            previous year
+          </h2>
+          <div class="lead">
+            Contrary to popular belief, Lorem Ipsum is not simply random text.
+            It has roots in a piece of classical Latin literature from 45 BC,
+            making it over 2000 years old. Richard McClintock.
+          </div>
+          <ul>
+            <li class="lead">
+              <span class="select-icon">&#10004;</span> Contrary to popular
+              belief, is not simply.
+            </li>
+            <li class="lead">
+              <span class="select-icon">&#10004;</span> Contrary to popular
+              belief
+            </li>
+            <li class="lead">
+              <span class="select-icon">&#10004;</span> Contrary to popular
+              belief, is not simply.
+            </li>
+            <li class="lead">
+              <span class="select-icon">&#10004;</span> Contrary to popular
+              belief
+            </li>
+            <li class="lead">
+              <span class="select-icon">&#10004;</span> Contrary to popular
+              belief, is not simply.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!--=====================-->
+    <!-- End Failure Section -->
+    <!--=====================-->
+    <!--====================-->
+    <!-- Start Plan Section -->
+    <!--====================-->
+    <section id="plan-section">
+      <div class="container">
+        <h2 class="title text-dark text-center my-100">My Plans</h2>
+        <div class="flex justify-between">
+          <div class="plan-item flex flex-col items-center gap-15">
+            <img src="./images/icons/web.png" alt="Web Development" />
+            <h3>Web Development</h3>
+            <p class="lead m-0">I want to start</p>
+          </div>
+          <div class="plan-item flex flex-col items-center gap-15">
+            <img src="./images/icons/js.png" alt="Javascript" />
+            <h3>Javascript</h3>
+            <p class="lead m-0">I want to learn</p>
+          </div>
+          <div class="plan-item flex flex-col items-center gap-15">
+            <img src="./images/icons/smoke.png" alt="Smoking" />
+            <h3>Smoking Habit</h3>
+            <p class="lead m-0">I want to end</p>
+          </div>
+          <div class="plan-item flex flex-col items-center gap-15">
+            <img src="./images/icons/ecom.png" alt="ecommerce" />
+            <h3>ecommerce</h3>
+            <p class="lead m-0">I want to develop</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--====================-->
+    <!-- Start Plan Section -->
+    <!--====================-->
+    <!--===================-->
+    <!-- Motivation sectio -->
+    <!--===================-->
+    <section id="motivation-section" class="my-100">
+      <div class="motivation container">
+        <h2>
+          Awlays keep a positive <br />
+          mindset
+        </h2>
+        <button class="btn btn-primary">Call Now</button>
+      </div>
+    </section>
+    <!--=====================-->
+    <!-- Motivation section  -->
+    <!--=====================-->
+    <!--================-->
+    <!-- Footer Section -->
+    <!--================-->
+    <footer id="footer" class="bg-dark">
+      <div class="container flex py-100">
+        <div class="w-50">
+          <h2 class="title">Future</h2>
+          <p class="my-10">
+            There are many variations of passages of Lorem Ipsum available, but
+            the majority have suffered alteration in some form, by injected
+            humour, or randomised words
+          </p>
+          <p>Email : info@gmail.com</p>
+          <p class="my-10">Phone : 01500 00 00 00</p>
+          <div class="icons flex gap-15 my-10">
+            <div class="icon">
+              <a href="https://www.facebook.com/shahjalal.bu">
+                <img src="./images/icons/fb.png" alt="fb"
+              /></a>
+            </div>
+            <div class="icon">
+              <a href="https://www.twitter.com/shahjalal.bu">
+                <img src="./images/icons/twitter.png" alt="fb"
+              /></a>
+            </div>
+            <div class="icon">
+              <a href="https://www.youtube.com/shahjalal.bu">
+                <img src="./images/icons/youtube.png" alt="fb"
+              /></a>
+            </div>
+          </div>
+        </div>
+        <div class="w-50 flex justify-center">
+          <form action="/" method="post">
+            <h3>Subscribe</h3>
+            <input type="email" placeholder="Enter your email" />
+            <input type="button" value="Subscribe" class="btn btn-primary" />
+          </form>
+        </div>
+      </div>
+    </footer>
+    <!--================-->
+    <!-- Footer Section -->
+    <!--================-->
   </body>
 </html>

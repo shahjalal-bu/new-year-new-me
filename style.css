@@ -1,63 +1,252 @@
 /* font */
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap");
 
-/*Start Common CSS Style */
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Work Sans', sans-serif;
+/*========================*/
+/*  Start Common CSS Style*/
+/*=========================*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+  color: #fff;
+  scroll-behavior: smooth;
+}
+li {
+  list-style: none;
 }
 
+.container {
+  padding: 0 15px;
+  margin: 0 auto;
+  width: 1180px;
+}
 
-.btn{
-    font-size: 16px;
-    padding: 15px 25px;
-    border: 0;
-    border-radius: 3px;
-    
+.title {
+  font-size: 40px;
+  font-weight: 700;
 }
-.btn-secondary{
-    background: #F15B22;
-    color: #fff;
-    transition:all 0.6s;
-    margin-top: 20px;
+.rounded {
+  border-radius: 10px;
 }
-.btn-secondary:hover{
-    background: rgba(241, 93, 34, 0.9);
+/* Flex Section  */
+.flex {
+  display: flex;
 }
+.flex-row-reverse {
+  flex-direction: row-reverse;
+}
+.flex-col {
+  flex-direction: column;
+}
+
+.justify-center {
+  justify-content: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.items-center {
+  align-items: center;
+}
+.gap-15 {
+  gap: 15px;
+}
+.gap-5 {
+  gap: 5px;
+}
+/* Flex Section  */
+/*Start width section  */
+.w-full {
+  width: 100%;
+}
+.w-50 {
+  width: 50%;
+}
+/*End width section  */
+
+/*start color and background class */
+.text-dark {
+  color: #151414;
+}
+.text-white {
+  color: #ffffff;
+}
+.bg-dark {
+  background-color: #151414;
+}
+.bg-white {
+  background-color: #fff;
+}
+.lead {
+  color: #444343;
+  margin: 10px 0;
+}
+/*end color and background class */
+
+/*Start button class section  */
+.btn {
+  font-size: 16px;
+  padding: 15px 25px;
+  border: 0;
+  border-radius: 3px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 20px;
+}
+.btn-secondary {
+  background: #f15b22;
+  color: #fff;
+  transition: all 0.6s;
+}
+.btn-secondary:hover {
+  background: rgba(241, 93, 34, 0.8);
+  color: #000;
+}
+.btn-primary {
+  color: #f15b22;
+  background: #fff;
+  transition: all 0.6s;
+}
+/*End button class section  */
+/* Start Margin and Padding Section  */
+.my-10 {
+  margin: 10px 0;
+}
+.my-100 {
+  margin: 100px 0;
+}
+.py-10 {
+  padding: 10px 0;
+}
+.py-100 {
+  padding: 100px 0;
+}
+.pt-100 {
+  padding-top: 100px;
+}
+.m-0 {
+  margin: 0 !important;
+}
+/* Start Margin and Padding Section  */
+
+.text-center {
+  text-align: center;
+}
+
+/* ========================*/
 /*End Common CSS Style */
+/* =========================*/
+/* Header section  */
+.logo{
+    font-style: italic;
+
+}
+.logo span {
+  color: #f15b22;
+  font-style: oblique;
+
+}
+header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+header a {
+  text-decoration: none;
+  transition: all 0.5s;
+}
+header a:hover {
+  color: #f15b22;
+}
+
+/*End Header section  */
 
 /* Start Branner Section */
-.branner{
-    width: 100vw;
-    height: 90vh;
-    background-image: url("./images/banner1.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
+.branner {
+  height: 90vh;
+  background-image: url("./images/banner1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
-.branner-right-section{
-    width: 55%;
-    text-align: right;
-    padding: 0 200px;
-
+.branner-right-section {
+  width: 55%;
+  text-align: right;
+  padding: 0 200px;
 }
-.branner-title{
-    font-size: 45px;
-    color:  #151414;
-    margin-bottom: 5px;
-} 
-
-.branner-text{
-    color: #444343;
-
+.branner-title {
+  font-size: 45px;
+  color: #151414;
+  margin-bottom: 5px;
 }
-
 /* End Branner Section */
 
 /* Start Failure Section */
+.failure .image-section {
+  position: relative;
+  margin: 0 100px;
+}
+.failure .circle {
+  width: 100%;
+  aspect-ratio: 1 /1;
+  background-color: rgba(241, 91, 34, 0.2);
+  border-radius: 50%;
+  position: absolute;
+  top: 119px;
+  left: 2px;
+  z-index: -1;
+}
+.select-icon {
+  color: #16d887;
+}
+
+/* End Failure Section */
+
+/* Start Plan Section  */
+
+.plan-item h3 {
+  color: #151414;
+  font-size: 24px;
+}
+/* Start Plan Section  */
+
+/*Start motivation section */
+.motivation {
+  background-image: linear-gradient(
+      to right,
+      rgba(241, 93, 34, 0.8),
+      rgba(241, 93, 34, 0.1)
+    ),
+    url("./images/watch.png");
+  /* height: 200px; */
+  background-size: cover;
+  border-radius: 10px;
+  padding: 50px 20px;
+}
+.motivation h2 {
+  color: #fff;
+  font-size: 30px;
+}
+/*End motivation section */
+
+/*Start footer section */
+
+footer input {
+  display: block;
+  padding: 17px 30px;
+}
+footer input[type="email"] {
+  background-color: #151414;
+  border-color: #fff;
+  color: #f3f3f3;
+  outline: none;
+  margin: 10px 0;
+  border-radius: 10px;
+}
+
+/*End  Footer section */
